@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+   <item
+       android:title="Gown"
+       android:id="@+id/gown">
+   </item>
+   <item
+       android:title="Lehenga"
+       android:id="@+id/lehenga">
+   </item>
+   <item
+       android:id="@+id/bridalWear"
+       android:title="Bridal Wear">
+
+   </item>
+   <item
+       android:id="@+id/jewellery"
+       android:title="Jewellery">
+
+   </item>
+   <item
+
+       android:id="@+id/sherwani"
+       android:title="Sherwani">
+
+   </item>
+   <item
+
+       android:id="@+id/pentcoat"
+       android:title="Pent Coat">
+
+   </item>
+   <item
+
+       android:id="@+id/safa"
+       android:title="Safa">
+
+   </item>
+
+</menu>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:id="@+id/aa"
+        tools:context=".ProductDetailActicity">
+
+        <ImageView
+            android:id="@+id/product_image_detail"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/product_name_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_image_detail"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Product name"
+            android:textColor="#9CA30590"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/product_description_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Description"
+            android:textColor="#9CA30590"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_below="@id/product_name_detail"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:id="@+id/rentpriceLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_below="@id/product_description_detail">
+
+            <TextView
+                android:id="@+id/product_Price_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Product Price"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#F30E000C"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+              />
+
+          <Button
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:layout_marginLeft="150dp"
+              android:background="@drawable/ic_favorite_black"
+              android:onClick="img_favorite"
+              android:layout_marginTop="20dp"
+
+              />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favorite"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+               />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/add_product_to_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rentpriceLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/nav_cart"
+            android:text="add to cart"
+            app:backgroundTint="@color/colorPrimary" />
+    </RelativeLayout>
+</ScrollView>

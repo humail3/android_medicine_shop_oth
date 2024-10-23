@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:context=".MainActivity">
+
+        <com.squareup.timessquare.CalendarPickerView
+            android:id="@+id/calendar"
+            android:layout_width="385dp"
+            android:background="#0F010C"
+            app:tsquare_dividerColor="#10D63B"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:onClick="getDate"
+            android:textColor="#fff"
+            android:text="Order Now"
+            android:background="@drawable/strokeinside"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/text_view_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

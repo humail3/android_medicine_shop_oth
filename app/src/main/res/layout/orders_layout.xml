@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:id="@+id/userName_orderList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/phonenumber_orderList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                android:layout_below="@id/userName_orderList" />
+            <TextView
+                android:id="@+id/ppppp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="productName"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                android:layout_below="@id/phonenumber_orderList" />
+            <TextView
+                android:id="@+id/productCode_orderList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="productCode"
+                android:textSize="15dp"
+                android:layout_below="@id/ppppp" />
+
+            <TextView
+                android:id="@+id/totalPrice_orderList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_below="@id/productCode_orderList"
+                android:text="Total Price"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/address_orderList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_below="@id/totalPrice_orderList"
+                android:text="address,city"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/dateTime_orderList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_below="@id/address_orderList"
+                android:text="date,time"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp" />
+
+
+            <LinearLayout
+                android:id="@+id/layoutdeliveryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/dateTime_orderList">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="Delivery Date"/>
+                <TextView
+                    android:id="@+id/deliveryPickUpDate_orderList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    tools:text="-- --"/>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

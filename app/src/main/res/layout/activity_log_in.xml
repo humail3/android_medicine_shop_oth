@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".LogIn.LogInActivity">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/shopping_bag"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/stroke_shape">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/mail_icon"
+            android:paddingRight="5dp"
+            android:paddingLeft="19dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvinputemailSignin">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Email Address"
+                android:textSize="15dp"
+                android:textColor="#131313"
+                android:inputType="textEmailAddress"
+
+                android:layout_marginTop="10dp"
+                android:id="@+id/email_sighin"
+                android:background="@null"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/stroke_shape">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/pass_icon"
+            android:paddingRight="5dp"
+            android:paddingLeft="19dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:id="@+id/tvinputPassSignin">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Password"
+                android:textSize="15dp"
+                android:textColor="#131313"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:id="@+id/pass_sighin"
+                android:background="@null"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginProgressbAr"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginBTn"
+        android:background="@drawable/strokeinside"
+        android:text="SignIn"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/forgotPassword"
+       android:text="forget password?"
+       android:textStyle="bold"
+       android:textColor="#000"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="150dp"
+      />
+
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        >
+
+        <TextView
+            android:id="@+id/guestAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Use As A Guest"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+            android:id="@+id/signup"
+          android:text="Sign Up"
+          android:textColor="#000"
+          android:textSize="15dp"
+          android:textStyle="bold"
+         />
+
+  </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".AdminActivity.AdminCategoryActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logOut"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimaryDark"
+        />
+    <TextView
+        android:id="@+id/slogan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Add New Medicine"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linear1_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan_category"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pain Killers"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="8dp"
+            android:background="#FB8C00"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:onClick="clickOnPainKillers"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="8dp"
+            android:background="#FB8C00"
+            android:text="heart disease"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:onClick="clickOnHeartDisease"
+            />
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="8dp"
+            android:background="#FB8C00"
+            android:text="Mascular pain"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:onClick="clickOnMascularPain"
+            />
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vitamins"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="8dp"
+            android:background="#FB8C00"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:onClick="clickOnVitamins"/>
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Injections"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="8dp"
+            android:background="#FB8C00"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:onClick="clickOnInjections"/>
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diabetes"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="8dp"
+            android:background="#FB8C00"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:onClick="clickOnDiabetes"/>
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Antibiotics"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="8dp"
+            android:background="#FB8C00"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:onClick="clickOnAntibiotics"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checknewOrder"
+            android:text="Check new Order"
+            android:layout_marginTop="24dp"
+            android:layout_margin="4dp"
+            android:textColor="#fff"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_margin="4dp"
+            android:background="@color/saplash"
+            android:onClick="addminViewProduct"
+            android:textColor="#fff"
+            android:text="View Product"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

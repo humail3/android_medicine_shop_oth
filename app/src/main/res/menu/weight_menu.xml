@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/weight1"
+        android:title="300g">
+
+    </item>
+    <item
+        android:id="@+id/weight2"
+        android:title="400 g">
+
+    </item>
+    <item
+        android:id="@+id/weight3"
+        android:title="500g">
+
+    </item>
+    <item
+        android:id="@+id/weight4"
+        android:title="600g">
+
+    </item>
+    <item
+        android:id="@+id/weight5"
+        android:title="700g">
+
+    </item>
+
+    <item
+        android:id="@+id/weight6"
+        android:title="800g">
+
+    </item>
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/waist1"
+        android:title="32-34 in">
+
+    </item>
+    <item
+        android:id="@+id/waist2"
+        android:title="32-36 in">
+
+    </item>
+    <item
+        android:id="@+id/waist3"
+        android:title="32-38 in">
+
+    </item>
+
+</menu>

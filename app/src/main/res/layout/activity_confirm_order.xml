@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        tools:context=".ConfirmOrderActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please write your Shipment Detail"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark" />
+        <TextView
+            android:id="@+id/ordertotalprice_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text= "Total Price "
+            android:textColor="#E01C1C"
+            android:textAlignment="center"
+            android:textSize="25dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:weightSum="2"
+            android:textAlignment="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/stroke_shape"
+            android:id="@+id/inputshiment_name">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter Your Name"
+                android:textSize="15dp"
+                android:drawablePadding="40dp"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="20dp"
+                android:id="@+id/shipment_name"
+                android:background="@null"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:weightSum="2"
+            android:textAlignment="center"
+            android:background="@drawable/stroke_shape"
+            android:layout_marginTop="20dp"
+            android:id="@+id/inputshiment_phone">
+
+            <EditText
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter Your Phone Number"
+                android:textSize="15dp"
+                android:drawablePadding="40dp"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="20dp"
+                android:id="@+id/shipment_phone"
+                android:background="@null"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:weightSum="2"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/stroke_shape"
+            android:id="@+id/inputshiment_address">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter Your Address"
+                android:textSize="15dp"
+                android:paddingLeft="20dp"
+                android:drawablePadding="40dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/shipment_address"
+                android:background="@null"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:weightSum="2"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/stroke_shape"
+            android:id="@+id/inputshiment_city">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter Your City Name"
+                android:textSize="15dp"
+                android:drawablePadding="40dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/shipment_city"
+                android:paddingLeft="20dp"
+                android:background="@null"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery"
+                    android:textStyle="bold"
+                    android:textColor="#130C0C"/>
+                <TextView
+                    android:id="@+id/delivery_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#130C0C"
+                    tools:text="-- --"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="70sp">
+
+                <TextView
+                    android:id="@+id/pickUp_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#130C0C"
+                    tools:text="-- --"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="confirm"
+            android:textColor="#fff"
+            android:background="@drawable/stroke_red"
+            android:onClick="confirmshipment"/>
+    </LinearLayout>
+</ScrollView>

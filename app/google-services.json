@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "577625151600",
+    "project_id": "medicineshop-6147f",
+    "storage_bucket": "medicineshop-6147f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577625151600:android:c9a801ebea32d7e369bcb5",
+        "android_client_info": {
+          "package_name": "com.fyp.medicineshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577625151600-v4sd1n2l2voln2p981oa7bvjt6klnqp1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD7mc5iLnM2nUlW0i3QxmwjEarCItnwMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577625151600-v4sd1n2l2voln2p981oa7bvjt6klnqp1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MedicineShop" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+
+        <!-- Base application theme. -->
+
+
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">#E4CDDC39</item>
+
+            <item name="colorPrimaryDark">#E4CDDC39</item>
+            <item name="colorAccent">#4CAF50</item>
+        </style>
+
+        <style name="Theme.AppCompat.Light.NoActionBar">
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+
+        </style>
+
+        <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    </resources>

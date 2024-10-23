@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fyp.medicineshop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        tools:replace="android:theme"
+        android:theme="@style/Theme.MedicineShop">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+<!--        <activity-->
+<!--            android:name=".Sort.LatestActivity"-->
+<!--            android:parentActivityName=".HomeActivity" />-->
+<!--        <activity-->
+<!--            android:name=".Sort.HighToLowActivity"-->
+<!--            android:parentActivityName=".HomeActivity" />-->
+<!--        <activity-->
+<!--            android:name=".Sort.LowToHighActivity"-->
+<!--            android:parentActivityName=".HomeActivity" />-->
+<!--        <activity-->
+
+<!--        <activity-->
+<!--            android:name=".AccountDeleteActivity"-->
+<!--            android:parentActivityName=".UserProfileActivity" />-->
+<!--        <activity android:name=".FAQ.FAQActivity" />-->
+<!--        <activity android:name=".LogIn.GoogleSignInActivity" />-->
+
+        <activity
+            android:name=".FavoriteItemActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".SearchProductActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".UserOrderActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ProductDetailActicity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ForgetPassActivity"
+            android:parentActivityName=".LogIn.LogInActivity" />
+        <activity
+            android:name=".CartActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".AdminActivity.AdminCategoryActivity"
+            android:parentActivityName=".LogIn.LogInActivity" />
+        <activity
+            android:name=".AdminActivity.AddProductAdminActivity"
+            android:parentActivityName=".AdminActivity.AdminCategoryActivity" />
+        <activity
+            android:name=".AdminActivity.Admin_new_Orders_Activity"
+            android:parentActivityName=".AdminActivity.AdminCategoryActivity" />
+        <activity
+            android:name=".AdminActivity.AdminViewProductActivity"
+            android:parentActivityName=".AdminActivity.AdminCategoryActivity" />
+        <activity
+            android:name=".PreviewPaymentActivity"
+            android:parentActivityName=".ProductDeliverDateActivity" />
+        <activity
+            android:name=".ProductDeliverDateActivity"
+            android:parentActivityName=".CartActivity" />
+
+        <activity
+            android:name=".ConfirmOrderActivity"
+            android:parentActivityName=".ProductDeliverDateActivity" />
+
+        <activity
+            android:name=".SignUpActivity"
+            android:parentActivityName=".LogIn.LogInActivity" />
+        <activity android:name=".LogIn.LogInActivity" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_application_id" />
+    </application>
+
+</manifest>

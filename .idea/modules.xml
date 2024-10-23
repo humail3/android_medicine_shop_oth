@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MedicineShop.iml" filepath="$PROJECT_DIR$/.idea/modules/MedicineShop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MedicineShop.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MedicineShop.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MedicineShop.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MedicineShop.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MedicineShop.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MedicineShop.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MedicineShop.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MedicineShop.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
